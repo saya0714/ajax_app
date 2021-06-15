@@ -1,5 +1,8 @@
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
-require("../memo")  // 追記する
+function post (){
+  const submit = document.getElementById("submit");
+  submit.addEventListener("click", () => {
+    console.log("イベント発火");
+  });
+};
+
+window.addEventListener('load', post);
